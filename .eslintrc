@@ -1,0 +1,64 @@
+{
+    "extends": [
+        "eslint:recommended",
+        "prettier",
+        "google"
+    ],
+    "plugins": [
+        "prettier"
+    ],
+    "parser": "babel-eslint",
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "jest": true,
+        "node": true
+    },
+    "parserOptions": {
+        "project": "./client/tsconfig.json",
+        "tsconfigRootDir": "./",
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "modules": true,
+            "experimentalObjectRestSpread": true
+        }
+    },
+    "rules": {
+        "prettier/prettier": ["warn"],
+        "max-len": ["error", { "code": 120 }],
+        "indent": ["error", 4, { "SwitchCase": 1 }],
+        "linebreak-style": 0,
+        "no-duplicate-imports": "warn",
+        "no-console": ["error", { "allow": ["warn", "error"] }],
+        "require-jsdoc": "off",
+        "arrow-parens": "off",
+        "no-return-assign": [
+            "error",
+            "except-parens"
+        ],
+        "no-plusplus": "off",
+        "import/prefer-default-export": "off",
+        "no-shadow": "off",
+        "spaced-comment": [
+            "error",
+            "always",
+            {
+                "markers": [
+                    "/"
+                ]
+            }
+        ],
+        "no-underscore-dangle": "off"
+    },
+    "globals": {
+        "window": true,
+        "document": true,
+        "localStorage": true,
+        "FormData": true,
+        "FileReader": true,
+        "Blob": true,
+        "navigator": true
+    }
+}
