@@ -1,0 +1,19 @@
+.excel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 34px;
+    padding: 0 20px;
+
+    &__controls {
+        display: flex;
+
+        &-item {
+            margin-left: 10px;
+        }
+
+        &-svg {
+            @include button;
+        }
+    }
+}

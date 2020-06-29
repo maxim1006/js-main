@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>JS main</title>
+</head>
+<body>
+
+<div id="app" class="app">
+    <div class="excel">
+        <div class="excel-header">
+            <input class="excel-header__input" type="text" placeholder="Новая таблица">
+            <div class="excel-header__controls">
+                <div class="excel-header__controls-item">
+                    <span class="material-icons excel-header__controls-svg">
+                        delete
+                    </span>
+                </div>
+                <div class="excel-header__controls-item">
+                    <span class="material-icons excel-header__controls-svg">
+                        exit_to_app
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="excel-toolbar">
+            <span class="material-icons excel-toolbar__svg">
+                format_align_left
+            </span>
+            <span class="material-icons excel-toolbar__svg">
+                format_align_center
+            </span>
+            <span class="material-icons excel-toolbar__svg">
+                format_align_right
+            </span>
+            <span class="material-icons excel-toolbar__svg">
+                format_bold
+            </span>
+            <span class="material-icons excel-toolbar__svg">
+                format_italic
+            </span>
+            <span class="material-icons excel-toolbar__svg">
+                format_underlined
+            </span>
+        </div>
+        <div class="excel-formula">
+            <div class="excel-formula__prefix">fx</div>
+            <div class="excel-formula__input" contenteditable="true"></div>
+        </div>
+        <div class="excel-table">
+            <div class="excel-table__row">
+                <div class="excel-table__row-info"></div>
+                <div class="excel-table__row-data">
+                    <div class="excel-table__row-data-column">A</div>
+                    <div class="excel-table__row-data-column">B</div>
+                    <div class="excel-table__row-data-column">C</div>
+                </div>
+            </div>
+            <div class="excel-table__row">
+                <div class="excel-table__row-info">1</div>
+                <div class="excel-table__row-data">
+                    <div class="excel-table__cell">A1</div>
+                    <div class="excel-table__cell">B2</div>
+                    <div class="excel-table__cell">C3</div>
+                    <div class="excel-table__cell">A1</div>
+                    <div class="excel-table__cell">B2</div>
+                    <div class="excel-table__cell">C3</div>
+                    <div class="excel-table__cell">A1</div>
+                    <div class="excel-table__cell">B2</div>
+                    <div class="excel-table__cell">C3</div>
+                    <div class="excel-table__cell">A1</div>
+                    <div class="excel-table__cell">B2</div>
+                    <div class="excel-table__cell">C3</div>
+                    <div class="excel-table__cell">A1</div>
+                    <div class="excel-table__cell">B2</div>
+                    <div class="excel-table__cell">C3</div>
+                    <div class="excel-table__cell">A1</div>
+                    <div class="excel-table__cell">B2</div>
+                    <div class="excel-table__cell">C3</div>
+                    <div class="excel-table__cell">A1</div>
+                    <div class="excel-table__cell">B2</div>
+                    <div class="excel-table__cell">C3</div>
+                    <div class="excel-table__cell">A1</div>
+                    <div class="excel-table__cell">B2</div>
+                    <div class="excel-table__cell">C3</div>
+                    <div class="excel-table__cell">A1</div>
+                    <div class="excel-table__cell">B2</div>
+                    <div class="excel-table__cell">C3</div>
+                    <div class="excel-table__cell">A1</div>
+                    <div class="excel-table__cell">B2</div>
+                    <div class="excel-table__cell">C3</div>
+                </div>
+            </div>
+            <div class="excel-table__row">
+                <div class="excel-table__row-info">2</div>
+                <div class="excel-table__row-data">
+                    <div class="excel-table__cell">A1</div>
+                    <div class="excel-table__cell">B2</div>
+                    <div class="excel-table__cell">C3</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

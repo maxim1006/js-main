@@ -1,0 +1,12 @@
+.excel-toolbar {
+    display: flex;
+    align-items: center;
+    height: $toolbar-height;
+    padding: 20px;
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+
+    &__svg {
+        @include button();
+    }
+}

@@ -1,0 +1,49 @@
+// normalize
+@import "~normalize.css";
+
+// local
+@import "./common/vars";
+@import "./common/font-vars";
+@import "./common/colors";
+@import "./common/mixins";
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+// bootstrap grid
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins/breakpoints";
+@import "~bootstrap/scss/mixins/grid-framework";
+@import "~bootstrap/scss/mixins/grid";
+@import "~bootstrap/scss/grid";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    @include font-regular;
+}
+
+a,
+a:visited {
+    color: #0054b9;
+    text-decoration: none;
+    transition: all 0.2s;
+
+    &:hover,
+    &:focus {
+        color: #c00;
+    }
+}
+
+// components
+@import "./components/dashboard/dashboard";
+@import "./components/dashboard/dashboard-table-list";
+@import "./components/excel/excel";
+@import "./components/excel/excel-formula";
+@import "./components/excel/excel-header";
+@import "./components/excel/excel-table";
+@import "./components/excel/excel-toolbar";

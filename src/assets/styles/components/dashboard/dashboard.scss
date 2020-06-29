@@ -1,0 +1,33 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 64px;
+        box-shadow: 0 2px 5px 2px rgba(60,64,67,0.15);
+    }
+
+    &__new {
+        padding: 1.5rem;
+        background-color: #dadce0;
+
+        &-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 160px;
+            height: 160px;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 4px;
+        }
+    }
+
+    &__table {
+        padding: 0 1.5rem;
+    }
+}

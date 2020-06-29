@@ -1,5 +1,5 @@
 import './module';
-import './index.scss';
+import '../assets/styles/index.scss';
 
 (() => {
     async function start() {

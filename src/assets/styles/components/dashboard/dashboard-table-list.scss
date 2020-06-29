@@ -1,0 +1,11 @@
+.dashboard-table-list {
+    &__row {
+        margin-top: 1.25rem;
+        padding: 0.75rem 1rem;
+
+        &:not(._header):hover {
+            background-color: #E6F4EA;
+            cursor: pointer;
+        }
+    }
+}

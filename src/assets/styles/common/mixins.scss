@@ -1,0 +1,9 @@
+@mixin button($color: #000) {
+    fill: $color;
+    transition: all 0.2s;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.3;
+    }
+}

@@ -34,6 +34,7 @@
         "no-console": ["error", { "allow": ["warn", "error"] }],
         "require-jsdoc": "off",
         "arrow-parens": "off",
+        "object-curly-spacing": "off",
         "no-return-assign": [
             "error",
             "except-parens"

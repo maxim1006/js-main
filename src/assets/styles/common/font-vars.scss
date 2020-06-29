@@ -1,0 +1,103 @@
+$font-family: 'Roboto', sans-serif;
+$font-small-size: 0.75rem;
+$font-normal-size: 1rem;
+$font-medium-size: 1.25rem;
+$font-big-size: 1.5rem;
+$font-large-size: 2rem;
+
+
+
+/*base*/
+@mixin font-base() {
+    font-family: var(--font-base-font-family, $font-family);
+    font-weight: var(--font-base-font-weight, 400);
+    font-style: normal;
+    font-size: var(--font-base-font-size, $font-normal-size);
+}
+/*****/
+
+
+
+/*font-light*/
+@mixin font-light() {
+    @include font-base;
+    font-weight: var(--font-light-font-weight, 300);
+}
+
+@mixin font-light-small() {
+    @include font-light;
+    font-size: var(--font-light-small-font-size, $font-small-size);
+}
+
+@mixin font-light-medium() {
+    @include font-light;
+    font-size: var(--font-light-medium-font-size, $font-medium-size);
+}
+
+@mixin font-light-big() {
+    @include font-light;
+    font-size: var(--font-light-big-font-size, $font-big-size);
+}
+
+@mixin font-light-large() {
+    @include font-light;
+    font-size: var(--font-light-large-font-size, $font-large-size);
+}
+/**********/
+
+
+
+/*font-regular*/
+@mixin font-regular() {
+    @include font-base;
+}
+
+@mixin font-regular-small() {
+    @include font-regular;
+    font-size: var(--font-regular-small-font-size, $font-small-size);
+}
+
+@mixin font-regular-medium() {
+    @include font-regular;
+    font-size: var(--font-regular-medium-font-size, $font-medium-size);
+}
+
+@mixin font-regular-big() {
+    @include font-regular;
+    font-size: var(--font-regular-big-font-size, $font-big-size);
+}
+
+@mixin font-regular-large() {
+    @include font-regular;
+    font-size: var(--font-regular-large-font-size, $font-large-size);
+}
+/**********/
+
+
+
+/*font-bold*/
+@mixin font-bold() {
+    @include font-base;
+    font-weight: var(--font-bold-font-weight, 700);
+}
+
+@mixin font-bold-small() {
+    @include font-bold;
+    font-size: var(--font-bold-small-font-size, $font-small-size);
+}
+
+@mixin font-bold-medium() {
+    @include font-bold;
+    font-size: var(--font-bold-medium-font-size, $font-medium-size);
+}
+
+@mixin font-bold-big() {
+    @include font-bold;
+    font-size: var(--font-bold-big-font-size, $font-big-size);
+}
+
+@mixin font-bold-large() {
+    @include font-bold;
+    font-size: var(--font-bold-large-font-size, $font-large-size);
+}
+/**********/
