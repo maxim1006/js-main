@@ -1,10 +1,6 @@
-import './module';
 import '../assets/styles/index.scss';
+import { Excel } from '@/components/excel/Excel';
 
-(() => {
-    async function start() {
-        await Promise.resolve();
-    }
+const excel = new Excel();
 
-    start();
-})();
+console.log('Excel ', excel);
